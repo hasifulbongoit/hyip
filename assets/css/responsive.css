@@ -1,0 +1,66 @@
+/* 540px */
+
+@media(min-width: 540px) {
+  .banner_heading {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .hyip_table_item_inner span {
+    font-size: 22px;
+  }
+
+  .subscribe_inner {
+    align-items: center;
+    flex-direction: row;
+  }
+}
+
+/* 768 */
+
+@media(min-width: 768px) {
+
+  .banner_heading {
+    font-size: 50px;
+    line-height: 66px;
+  }
+
+  .banner_text {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .banner_btn a {
+    padding: 15px 45px;
+  }
+
+}
+
+/* 1024 */
+
+@media(min-width: 1024px) {
+  .toggle_nav {
+    display: none;
+  }
+
+  .header_nav {
+    display: block;
+  }
+
+  .banner_heading {
+    font-size: 70px;
+    line-height: 106px;
+  }
+}
+
+/* 1200 */
+
+@media(min-width: 1200px) {
+  .section_padding {
+    padding: 30px 0px;
+  }
+
+  .header_nav_link {
+    padding: 11px 30px;
+  }
+}

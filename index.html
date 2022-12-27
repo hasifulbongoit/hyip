@@ -1,0 +1,2477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>javascrirpt dom</title>
+  <!-- font awesome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+  <!-- bootstrap link -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+  <!-- font family -->
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+  <!-- slick slider -->
+  <link rel="stylesheet" href="assets/css/slick-theme.css">
+  <link rel="stylesheet" href="assets/css/slick.css">
+  <!-- shortcut icon -->
+  <link rel="icon" href="assets//image/logo.png">
+  <!-- css link -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/global.css">
+  <link rel="stylesheet" href="assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!-- header section -->
+  <header class="header_section">
+    <!-- container -->
+    <div class="container">
+      <!-- header wrapper -->
+      <div class="header_wrapper">
+        <!-- headre logo -->
+        <div class="header_logo_inner">
+          <!-- logo image -->
+          <a href="./index.html" class="header_logo">
+            <img src="assets/image/logo.png" alt="">
+          </a>
+        </div>
+
+        <!-- header nav -->
+        <div class="header_nav">
+          <!-- header nav list -->
+          <ul class="header_nav_list">
+            <li class="header_nav_item">
+              <a class="header_nav_link" href="#">Home</a>
+            </li>
+            <li class="header_nav_item">
+              <a class="header_nav_link" href="#">Insurance Request</a>
+            </li>
+            <li class="header_nav_item">
+              <a class="header_nav_link" href="#">Add Advertise</a>
+            </li>
+            <li class="header_nav_item">
+              <a class="header_nav_link" href="#">RCB</a>
+            </li>
+            <li class="header_nav_item">
+              <a class="header_nav_link" href="#">Directory</a>
+            </li>
+            <li class="header_nav_item">
+              <a class="header_nav_link" href="#">Articles <span class="header_nav_icon"><svg
+                    xmlns="http://www.w3.org/2000/svg" width="14" height="7.7" viewBox="0 0 14 7.7">
+                    <path id="Path_27" data-name="Path 27"
+                      d="M.256,13.795a.743.743,0,0,0,1.025,0L7.275,8.01a1.365,1.365,0,0,0,0-1.979L1.237.2A.744.744,0,0,0,.22.2a.683.683,0,0,0-.008,1L5.737,6.526a.682.682,0,0,1,0,.99L.256,12.806a.682.682,0,0,0,0,.989"
+                      transform="translate(13.999 0.001) rotate(90)" fill-rule="evenodd" />
+                  </svg>
+                </span></a>
+            </li>
+            <li class="header_nav_item">
+              <a class="header_nav_link" href="#">Support</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- header right -->
+        <div class="header_right">
+          <!-- header profile inner -->
+          <div class="header_profile_inner">
+            <div class="header_profile_icon">
+              <span class="header_icon_inner"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="25"
+                  viewBox="0 0 20 25">
+                  <path id="Path_1" data-name="Path 1"
+                    d="M7.356,15.959a31.58,31.58,0,0,1,5.4,0,18.664,18.664,0,0,1,2.917.429c2.076.418,3.43,1.243,4,2.453A3.751,3.751,0,0,1,19.635,22c-.579,1.21-1.934,2.035-4.042,2.464a18.7,18.7,0,0,1-2.906.418A24.352,24.352,0,0,1,9.836,25H9.5a.958.958,0,0,1,0-1.9h.748c.749-.009,1.5-.044,2.257-.11a17.792,17.792,0,0,0,2.644-.374c1.5-.33,2.436-.8,2.731-1.43a1.759,1.759,0,0,0,0-1.518c-.295-.638-1.234-1.133-2.7-1.43a17.012,17.012,0,0,0-2.688-.385,27.988,27.988,0,0,0-5.08,0,17.935,17.935,0,0,0-2.655.374c-1.5.33-2.425.8-2.731,1.43a1.825,1.825,0,0,0-.164.759,1.869,1.869,0,0,0,.164.77A3.175,3.175,0,0,0,4.209,22.47h0l.127.034a.956.956,0,0,1-.607,1.813,4.839,4.839,0,0,1-3.376-2.31,3.707,3.707,0,0,1,0-3.157c.579-1.243,1.934-2.046,4.02-2.475A20.044,20.044,0,0,1,7.356,15.959Zm.1-15.45a6.621,6.621,0,0,1,7.252,1.457,6.731,6.731,0,0,1,1.435,7.3A6.647,6.647,0,0,1,3.346,6.7h0l.006-.289A6.7,6.7,0,0,1,7.456.509Zm2.533,1.4a4.736,4.736,0,0,0-3.367,1.4,4.818,4.818,0,0,0,1.537,7.825A4.74,4.74,0,0,0,13.353,10.1,4.819,4.819,0,0,0,14.39,4.877,4.763,4.763,0,0,0,9.989,1.914Z"
+                    fill="#274c77" />
+                </svg>
+              </span>
+            </div>
+          </div>
+
+          <!-- toglle nav -->
+          <div class="toggle_nav" id="toggle_nav">
+            <ul>
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+
+          <!-- mobile nav -->
+          <div class="mobile_nav" id="mobile_nav">
+            <div class="mobile_nav_wrapper">
+              <!-- cross btn -->
+              <div class="cross_btn" id="cross_btn">
+                <span><svg xmlns="http://www.w3.org/2000/svg" width="20.012" height="20" viewBox="0 0 20.012 20">
+                    <path id="Path_30" data-name="Path 30"
+                      d="M20.512,1.748a1.242,1.242,0,0,0-.366-.884,1.28,1.28,0,0,0-1.769,0L10.506,8.735,2.635.864a1.28,1.28,0,0,0-1.769,0,1.25,1.25,0,0,0,0,1.769L8.737,10.5.866,18.374a1.25,1.25,0,0,0,0,1.769,1.28,1.28,0,0,0,1.769,0l7.871-7.871,7.871,7.871a1.251,1.251,0,1,0,1.769-1.769L12.275,10.5l7.871-7.871A1.242,1.242,0,0,0,20.512,1.748Z"
+                      transform="translate(-0.5 -0.509)" fill="#f9f8f8" />
+                  </svg>
+                </span>
+              </div>
+              <!-- mobile nav -->
+              <div class="mobile_nav_content">
+                <!-- mobile logo -->
+                <a href="" class="mobile_log">
+                  <img src="assets/image/footerlogo.png" alt="">
+                </a>
+                <!-- nav list -->
+                <ul class="mobile_nav_list">
+                  <li class="header_nav_item">
+                    <a class="header_nav_link" href="#">Home</a>
+                  </li>
+                  <li class="header_nav_item">
+                    <a class="header_nav_link" href="#">Insurance Request</a>
+                  </li>
+                  <li class="header_nav_item">
+                    <a class="header_nav_link" href="#">Add Advertise</a>
+                  </li>
+                  <li class="header_nav_item">
+                    <a class="header_nav_link" href="#">RCB</a>
+                  </li>
+                  <li class="header_nav_item">
+                    <a class="header_nav_link" href="#">Directory</a>
+                  </li>
+                  <li class="header_nav_item">
+                    <a class="header_nav_link" href="#">Articles <span class="header_nav_icon"><svg
+                          xmlns="http://www.w3.org/2000/svg" width="14" height="7.7" viewBox="0 0 14 7.7">
+                          <path id="Path_27" data-name="Path 27"
+                            d="M.256,13.795a.743.743,0,0,0,1.025,0L7.275,8.01a1.365,1.365,0,0,0,0-1.979L1.237.2A.744.744,0,0,0,.22.2a.683.683,0,0,0-.008,1L5.737,6.526a.682.682,0,0,1,0,.99L.256,12.806a.682.682,0,0,0,0,.989"
+                            transform="translate(13.999 0.001) rotate(90)" fill-rule="evenodd" />
+                        </svg>
+                      </span></a>
+                  </li>
+                  <li class="header_nav_item">
+                    <a class="header_nav_link" href="#">Support</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </header>
+  <!-- header section -->
+
+  <!-- banner section -->
+  <div class="banner_section section_padding">
+    <div class="container">
+      <!-- banner content -->
+      <div class="banner_content">
+        <!-- heading inner -->
+        <div class="banner_heading_inner">
+          <h1 class="banner_heading">The best <b>marketing</b> doesn't
+            feel like <b>marketing</b></h1>
+        </div>
+        <!-- banner text -->
+        <div class="banner_text_inner">
+          <p class="banner_text">
+            It is a long established fact that a reader will be distracted by the readable content of a page when
+            looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of
+            letters, as opposed to using 'Content here, content here', making it look like readable English.
+          </p>
+        </div>
+        <!-- banner btn -->
+
+        <div class="banner_btn_wrapper">
+
+          <!-- btn -->
+          <div class="banner_btn">
+            <a href="">Sign up</a>
+          </div>
+
+          <!-- btn -->
+          <div class="banner_btn banner_btn_border">
+            <a href="">Contact us</a>
+          </div>
+
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- banner section end-->
+
+  <!-- banner add -->
+  <div class="banner_add section_padding">
+    <div class="container">
+      <!-- banner wrapper -->
+      <div class="banner_add_wrapper">
+
+        <div class="row">
+          <div class="col-md-8">
+            <!-- left -->
+            <div class="banner_add_left">
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/888/advancetrading728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="advancetrading.cloud"
+                  title="Expires At 2022-12-31 19:12:00">
+              </div>
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/888/doradus728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="doradus.io"
+                  title="Expires At 2022-12-31 19:42:00">
+              </div>
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/banners/plexustrades728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="plexustrades.com"
+                  title="Expires At 2023-01-01 23:05:00">
+              </div>
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/banners/wisebet728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="wisebet.online"
+                  title="Expires At 2022-12-30 19:37:00">
+              </div>
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/888/royalcasinofunds728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="royalcasinofunds.com"
+                  title="Expires At 2023-01-01 06:44:00">
+              </div>
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/banners/abystex728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="Abystex.com"
+                  title="Expires At 2023-01-15 20:07:00">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <!-- right -->
+            <div class="banner_add_right">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="banner_add_item">
+                    <img src="https://invest-tracing.com/banners/asterium160.gif" class="img-thumbnail banner160"
+                      alt="asterium.club" title="Expires At 2023-01-01 23:44:00">
+                  </div>
+                  <div class="banner_add_item">
+                    <img src="https://invest-tracing.com/thumbnail/InvisibleBit.gif" class="img-thumbnail banner125"
+                      alt="invisiblebit.me" title="Expires At 2022-12-30 19:47:00">
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="banner_add_item">
+                    <img src="https://stalltrade.com/160a.gif" class="img-thumbnail banner160" alt="stalltrade.com"
+                      title="Expires At 2022-12-28 21:02:52">
+                  </div>
+                  <div class="banner_add_item">
+                    <img src="https://invest-tracing.com/thumbnail/RoyalCasinoFunds.gif" class="img-thumbnail banner125"
+                      alt="royalcasinofunds.com" title="Expires At 2023-01-06 19:49:00">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- banner add end -->
+
+  <!-- project section -->
+  <div class="project_section section_padding">
+    <div class="container">
+      <!-- section title -->
+      <div class="section_title">
+        <h1 class="section_title_heading">Popular investment Projects</h1>
+      </div>
+      <!-- card wrapper -->
+      <div class="card_item_wrapper">
+        <div class="row">
+          <!-- card item -->
+          <div class="col-md-6 col-lg-4">
+            <!-- card item -->
+            <div class="card_item">
+              <div class="card_item_thumb">
+                <img src="assets/image/Rectangle 32.png" alt="">
+              </div>
+              <div class="card_item_body">
+                <!-- card title -->
+                <div class="card_item_title">Daily Profit Market</div>
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>All Monitors</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card body text -->
+                <div class="card_body_text">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+                </div>
+
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>Accepts</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card link -->
+                <div class="card_link_wrapper">
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                </div>
+
+                <!-- card btn -->
+                <div class="card_btn_wrapper">
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- card item -->
+          <div class="col-md-6 col-lg-4">
+            <!-- card item -->
+            <div class="card_item">
+              <div class="card_item_thumb">
+                <img src="assets/image/Rectangle 32.png" alt="">
+              </div>
+              <div class="card_item_body">
+                <!-- card title -->
+                <div class="card_item_title">Daily Profit Market</div>
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>All Monitors</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card body text -->
+                <div class="card_body_text">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+                </div>
+
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>Accepts</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card link -->
+                <div class="card_link_wrapper">
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                </div>
+
+                <!-- card btn -->
+                <div class="card_btn_wrapper">
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- card item -->
+          <div class="col-md-6 col-lg-4">
+            <!-- card item -->
+            <div class="card_item">
+              <div class="card_item_thumb">
+                <img src="assets/image/Rectangle 32.png" alt="">
+              </div>
+              <div class="card_item_body">
+                <!-- card title -->
+                <div class="card_item_title">Daily Profit Market</div>
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>All Monitors</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card body text -->
+                <div class="card_body_text">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+                </div>
+
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>Accepts</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card link -->
+                <div class="card_link_wrapper">
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                </div>
+
+                <!-- card btn -->
+                <div class="card_btn_wrapper">
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- card item -->
+          <div class="col-md-6 col-lg-4">
+            <!-- card item -->
+            <div class="card_item">
+              <div class="card_item_thumb">
+                <img src="assets/image/Rectangle 32.png" alt="">
+              </div>
+              <div class="card_item_body">
+                <!-- card title -->
+                <div class="card_item_title">Daily Profit Market</div>
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>All Monitors</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card body text -->
+                <div class="card_body_text">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+                </div>
+
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>Accepts</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card link -->
+                <div class="card_link_wrapper">
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                </div>
+
+                <!-- card btn -->
+                <div class="card_btn_wrapper">
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- card item -->
+          <div class="col-md-6 col-lg-4">
+            <!-- card item -->
+            <div class="card_item">
+              <div class="card_item_thumb">
+                <img src="assets/image/Rectangle 32.png" alt="">
+              </div>
+              <div class="card_item_body">
+                <!-- card title -->
+                <div class="card_item_title">Daily Profit Market</div>
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>All Monitors</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card body text -->
+                <div class="card_body_text">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+                </div>
+
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>Accepts</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card link -->
+                <div class="card_link_wrapper">
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                </div>
+
+                <!-- card btn -->
+                <div class="card_btn_wrapper">
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- card item -->
+          <div class="col-md-6 col-lg-4">
+            <!-- card item -->
+            <div class="card_item">
+              <div class="card_item_thumb">
+                <img src="assets/image/Rectangle 32.png" alt="">
+              </div>
+              <div class="card_item_body">
+                <!-- card title -->
+                <div class="card_item_title">Daily Profit Market</div>
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>All Monitors</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card body text -->
+                <div class="card_body_text">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+                </div>
+
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>Accepts</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card link -->
+                <div class="card_link_wrapper">
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                </div>
+
+                <!-- card btn -->
+                <div class="card_btn_wrapper">
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- project section end -->
+
+  <!-- banner add -->
+  <div class="banner_add section_padding">
+    <div class="container">
+      <!-- banner wrapper -->
+      <div class="banner_add_wrapper">
+
+        <div class="row">
+          <div class="col-md-8">
+            <!-- left -->
+            <div class="banner_add_left">
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/888/advancetrading728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="advancetrading.cloud"
+                  title="Expires At 2022-12-31 19:12:00">
+              </div>
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/888/doradus728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="doradus.io"
+                  title="Expires At 2022-12-31 19:42:00">
+              </div>
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/banners/plexustrades728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="plexustrades.com"
+                  title="Expires At 2023-01-01 23:05:00">
+              </div>
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/banners/wisebet728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="wisebet.online"
+                  title="Expires At 2022-12-30 19:37:00">
+              </div>
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/888/royalcasinofunds728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="royalcasinofunds.com"
+                  title="Expires At 2023-01-01 06:44:00">
+              </div>
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/banners/abystex728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="Abystex.com"
+                  title="Expires At 2023-01-15 20:07:00">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <!-- right -->
+            <div class="banner_add_right">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="banner_add_item">
+                    <img src="https://invest-tracing.com/banners/asterium160.gif" class="img-thumbnail banner160"
+                      alt="asterium.club" title="Expires At 2023-01-01 23:44:00">
+                  </div>
+                  <div class="banner_add_item">
+                    <img src="https://invest-tracing.com/thumbnail/InvisibleBit.gif" class="img-thumbnail banner125"
+                      alt="invisiblebit.me" title="Expires At 2022-12-30 19:47:00">
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="banner_add_item">
+                    <img src="https://stalltrade.com/160a.gif" class="img-thumbnail banner160" alt="stalltrade.com"
+                      title="Expires At 2022-12-28 21:02:52">
+                  </div>
+                  <div class="banner_add_item">
+                    <img src="https://invest-tracing.com/thumbnail/RoyalCasinoFunds.gif" class="img-thumbnail banner125"
+                      alt="royalcasinofunds.com" title="Expires At 2023-01-06 19:49:00">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- banner add end -->
+
+  <!-- project section -->
+  <div class="project_section section_padding">
+    <div class="container">
+      <!-- section title -->
+      <div class="section_title">
+        <h1 class="section_title_heading">Popular investment Projects</h1>
+      </div>
+      <!-- card wrapper -->
+      <div class="card_item_wrapper">
+        <div class="row">
+          <!-- card item -->
+          <div class="col-md-6 col-lg-4">
+            <!-- card item -->
+            <div class="card_item">
+              <div class="card_item_thumb">
+                <img src="assets/image/Rectangle 32.png" alt="">
+              </div>
+              <div class="card_item_body">
+                <!-- card title -->
+                <div class="card_item_title">Daily Profit Market</div>
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>All Monitors</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card body text -->
+                <div class="card_body_text">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+                </div>
+
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>Accepts</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card link -->
+                <div class="card_link_wrapper">
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                </div>
+
+                <!-- card btn -->
+                <div class="card_btn_wrapper">
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- card item -->
+          <div class="col-md-6 col-lg-4">
+            <!-- card item -->
+            <div class="card_item">
+              <div class="card_item_thumb">
+                <img src="assets/image/Rectangle 32.png" alt="">
+              </div>
+              <div class="card_item_body">
+                <!-- card title -->
+                <div class="card_item_title">Daily Profit Market</div>
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>All Monitors</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card body text -->
+                <div class="card_body_text">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+                </div>
+
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>Accepts</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card link -->
+                <div class="card_link_wrapper">
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                </div>
+
+                <!-- card btn -->
+                <div class="card_btn_wrapper">
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- card item -->
+          <div class="col-md-6 col-lg-4">
+            <!-- card item -->
+            <div class="card_item">
+              <div class="card_item_thumb">
+                <img src="assets/image/Rectangle 32.png" alt="">
+              </div>
+              <div class="card_item_body">
+                <!-- card title -->
+                <div class="card_item_title">Daily Profit Market</div>
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>All Monitors</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card body text -->
+                <div class="card_body_text">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+                </div>
+
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>Accepts</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card link -->
+                <div class="card_link_wrapper">
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                </div>
+
+                <!-- card btn -->
+                <div class="card_btn_wrapper">
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- card item -->
+          <div class="col-md-6 col-lg-4">
+            <!-- card item -->
+            <div class="card_item">
+              <div class="card_item_thumb">
+                <img src="assets/image/Rectangle 32.png" alt="">
+              </div>
+              <div class="card_item_body">
+                <!-- card title -->
+                <div class="card_item_title">Daily Profit Market</div>
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>All Monitors</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card body text -->
+                <div class="card_body_text">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+                </div>
+
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>Accepts</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card link -->
+                <div class="card_link_wrapper">
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                </div>
+
+                <!-- card btn -->
+                <div class="card_btn_wrapper">
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- card item -->
+          <div class="col-md-6 col-lg-4">
+            <!-- card item -->
+            <div class="card_item">
+              <div class="card_item_thumb">
+                <img src="assets/image/Rectangle 32.png" alt="">
+              </div>
+              <div class="card_item_body">
+                <!-- card title -->
+                <div class="card_item_title">Daily Profit Market</div>
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>All Monitors</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card body text -->
+                <div class="card_body_text">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+                </div>
+
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>Accepts</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card link -->
+                <div class="card_link_wrapper">
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                </div>
+
+                <!-- card btn -->
+                <div class="card_btn_wrapper">
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- card item -->
+          <div class="col-md-6 col-lg-4">
+            <!-- card item -->
+            <div class="card_item">
+              <div class="card_item_thumb">
+                <img src="assets/image/Rectangle 32.png" alt="">
+              </div>
+              <div class="card_item_body">
+                <!-- card title -->
+                <div class="card_item_title">Daily Profit Market</div>
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>All Monitors</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card body text -->
+                <div class="card_body_text">
+                  <p>It is a long established fact that a reader will be distracted by the readable content of a page
+                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
+                    distribution of letters, as opposed to using 'Content here, content here', making it look like
+                    readable English.</p>
+                </div>
+
+                <!-- card body inner -->
+                <div class="card_body_inner">
+                  <div class="row">
+                    <div class="col-7">
+                      <div class="card_monitors">
+                        <div class="card_deposit_title">
+                          <p>Accepts</p>
+                        </div>
+                        <!-- payment list -->
+                        <div class="card_payment_list">
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Bitcoin Cash.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Dogecoin.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Ethereum.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Tether.png" alt="">
+                          </a>
+                          <!-- image -->
+                          <a href="" class="payment_item_image">
+                            <img src="assets/image/payment/Litecoin.png" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-5">
+                      <div class="card_deposit">
+                        <div class="card_deposit_title">
+                          <p>Our Deposite</p>
+                        </div>
+                        <div class="card_depopsit_price">
+                          $6500.00
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- card link -->
+                <div class="card_link_wrapper">
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                  <!-- btn inner -->
+                  <div class="card_link_inner">
+                    <a href="#">Other RCB</a>
+                  </div>
+                </div>
+
+                <!-- card btn -->
+                <div class="card_btn_wrapper">
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                  <div class="card_btn">
+                    <a href="">More info</a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- project section end -->
+
+  <!-- banner add -->
+  <div class="banner_add section_padding">
+    <div class="container">
+      <!-- banner wrapper -->
+      <div class="banner_add_wrapper">
+
+        <div class="row">
+          <div class="col-md-8">
+            <!-- left -->
+            <div class="banner_add_left">
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/888/advancetrading728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="advancetrading.cloud"
+                  title="Expires At 2022-12-31 19:12:00">
+              </div>
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/888/doradus728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="doradus.io"
+                  title="Expires At 2022-12-31 19:42:00">
+              </div>
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/banners/plexustrades728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="plexustrades.com"
+                  title="Expires At 2023-01-01 23:05:00">
+              </div>
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/banners/wisebet728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="wisebet.online"
+                  title="Expires At 2022-12-30 19:37:00">
+              </div>
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/888/royalcasinofunds728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="royalcasinofunds.com"
+                  title="Expires At 2023-01-01 06:44:00">
+              </div>
+
+              <!-- item -->
+              <div class="banner_add_item">
+                <img src="https://invest-tracing.com/banners/abystex728.gif"
+                  class="img-responsive img-rounded img-thumbnail banner728" alt="Abystex.com"
+                  title="Expires At 2023-01-15 20:07:00">
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <!-- right -->
+            <div class="banner_add_right">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="banner_add_item">
+                    <img src="https://invest-tracing.com/banners/asterium160.gif" class="img-thumbnail banner160"
+                      alt="asterium.club" title="Expires At 2023-01-01 23:44:00">
+                  </div>
+                  <div class="banner_add_item">
+                    <img src="https://invest-tracing.com/thumbnail/InvisibleBit.gif" class="img-thumbnail banner125"
+                      alt="invisiblebit.me" title="Expires At 2022-12-30 19:47:00">
+                  </div>
+                </div>
+
+                <div class="col-sm-6">
+                  <div class="banner_add_item">
+                    <img src="https://stalltrade.com/160a.gif" class="img-thumbnail banner160" alt="stalltrade.com"
+                      title="Expires At 2022-12-28 21:02:52">
+                  </div>
+                  <div class="banner_add_item">
+                    <img src="https://invest-tracing.com/thumbnail/RoyalCasinoFunds.gif" class="img-thumbnail banner125"
+                      alt="royalcasinofunds.com" title="Expires At 2023-01-06 19:49:00">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- banner add end -->
+
+  <!-- hyip table card -->
+  <div class="hyip_table_section section_padding">
+    <div class="container">
+      <div class="hyip_table_wrapper">
+        <div class="row">
+          <!-- hyip table item -->
+          <div class="col-lg-6">
+            <div class="hyip_table_item">
+              <div class="hyip_table_header">Latest Payouts</div>
+              <!-- list -->
+              <ul class="hyip_table_list">
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <!-- hyip table item -->
+          <div class="col-lg-6">
+            <div class="hyip_table_item">
+              <div class="hyip_table_header">Latest Payouts</div>
+              <!-- list -->
+              <ul class="hyip_table_list">
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <!-- hyip table item -->
+          <div class="col-lg-6">
+            <div class="hyip_table_item">
+              <div class="hyip_table_header">Latest Payouts</div>
+              <!-- list -->
+              <ul class="hyip_table_list">
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+          <!-- hyip table item -->
+          <div class="col-lg-6">
+            <div class="hyip_table_item">
+              <div class="hyip_table_header">Latest Payouts</div>
+              <!-- list -->
+              <ul class="hyip_table_list">
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+                <!-- item -->
+                <li class="hyip_table_item_inner">
+                  <span>Daily profit market</span>
+                  <span>$2500.00</span>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- hyip table card end-->
+
+  <!-- footer section -->
+  <div class="footer_section section_padding">
+    <div class="container">
+      <div class="footer_wrapper">
+        <div class="row">
+          <!-- footer details -->
+          <div class="col-md-12 col-lg-6">
+            <div class="footer_details">
+              <!-- logo -->
+              <div class="footer_logo_inner">
+                <a href="#" class="footer_logo">
+                  <img src="assets/image/footerlogo.png" alt="">
+                </a>
+              </div>
+              <!-- footer details -->
+              <div class="footer_details_text">
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                  alteration in some form, by injected humour, or randomised words which don't look even slightly
+                  believable.</p>
+              </div>
+              <!-- subscirbe -->
+
+              <div class="subscribe_wrapper">
+                <!-- title -->
+                <div class="footer_title">Subscribe</div>
+                <!-- subscribe_inner -->
+                <div class="subscribe_inner">
+                  <div class="subscribe_input">
+                    <input type="text" placeholder="Enter your Email">
+                  </div>
+                  <div class="subscribe_btn">
+                    <a href="#">Subscribe</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- footer nav -->
+          <div class="col-sm-6 col-lg-3">
+            <div class="footer_nav">
+              <!-- footer title -->
+              <div class="footer_title">Quick Links</div>
+              <!-- nav list -->
+              <ul class="footer_nav_list">
+                <li><a href="">Home</a></li>
+                <li><a href="">News</a></li>
+                <li><a href="">Insurance request</a></li>
+                <li><a href="">RCB</a></li>
+                <li><a href="">Directory</a></li>
+                <li><a href="">Support</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-lg-3">
+            <div class="footer_social">
+              <!-- footer title -->
+              <div class="footer_title">Follow us</div>
+              <!-- list -->
+              <ul class="footer_social_list">
+                <!-- item -->
+                <li><a href="">
+                    <span class="footer_social_list_icon"><i class="fa-brands fa-telegram"></i></span>
+                    <span>Telegram Ru chat</span>
+                  </a></li>
+                <!-- item -->
+                <li><a href="">
+                    <span class="footer_social_list_icon"><i class="fa-brands fa-telegram"></i></span>
+                    <span>Telegram Ru chat</span>
+                  </a></li>
+                <!-- item -->
+                <li><a href="">
+                    <span class="footer_social_list_icon"><i class="fa-brands fa-facebook-f"></i></span>
+                    <span>Telegram Ru chat</span>
+                  </a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- footer section end -->
+
+
+
+  <!-- bootstrap cdn link -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- jquery cdn -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <!-- slick slider -->
+  <script src="assets/js/slick.min.js"></script>
+  <!-- app js -->
+  <script src="assets/js/apps.js"></script>
+
+</body>
+
+</html>
