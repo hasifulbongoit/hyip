@@ -1,0 +1,455 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>javascrirpt dom</title>
+        <!-- font awesome cdn -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+        <!-- bootstrap link -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+        <!-- font family -->
+        <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet">
+        <!-- slick slider -->
+        <link rel="stylesheet" href="assets/css/slick-theme.css">
+        <link rel="stylesheet" href="assets/css/slick.css">
+        <!-- shortcut icon -->
+        <link rel="icon" href="assets//image/logo.png">
+        <!-- css link -->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/global.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+
+    <body>
+
+        <!-- header section -->
+        <header class="header_section">
+            <!-- container -->
+            <div class="container">
+                <!-- header wrapper -->
+                <div class="header_wrapper">
+                    <!-- headre logo -->
+                    <div class="header_logo_inner">
+                        <!-- logo image -->
+                        <a href="./index.html" class="header_logo">
+                            <img src="assets/image/logo.png" alt="">
+                        </a>
+                    </div>
+
+                    <!-- header nav -->
+                    <div class="header_nav">
+                        <!-- header nav list -->
+                        <ul class="header_nav_list">
+                            <li class="header_nav_item">
+                                <a class="header_nav_link" href="#">Home</a>
+                            </li>
+                            <li class="header_nav_item">
+                                <a class="header_nav_link" href="#">Insurance Request</a>
+                            </li>
+                            <li class="header_nav_item">
+                                <a class="header_nav_link" href="#">Add Advertise</a>
+                            </li>
+                            <li class="header_nav_item">
+                                <a class="header_nav_link" href="#">RCB</a>
+                            </li>
+                            <li class="header_nav_item">
+                                <a class="header_nav_link" href="#">Directory</a>
+                            </li>
+                            <li class="header_nav_item">
+                                <a class="header_nav_link" href="#">Articles <span class="header_nav_icon"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="14" height="7.7"
+                                            viewBox="0 0 14 7.7">
+                                            <path id="Path_27" data-name="Path 27"
+                                                d="M.256,13.795a.743.743,0,0,0,1.025,0L7.275,8.01a1.365,1.365,0,0,0,0-1.979L1.237.2A.744.744,0,0,0,.22.2a.683.683,0,0,0-.008,1L5.737,6.526a.682.682,0,0,1,0,.99L.256,12.806a.682.682,0,0,0,0,.989"
+                                                transform="translate(13.999 0.001) rotate(90)" fill-rule="evenodd" />
+                                        </svg>
+                                    </span></a>
+                            </li>
+                            <li class="header_nav_item">
+                                <a class="header_nav_link" href="#">Support</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- header right -->
+                    <div class="header_right">
+                        <!-- header profile inner -->
+                        <div class="header_profile_inner">
+                            <div class="header_profile_icon">
+                                <span class="header_icon_inner"><svg xmlns="http://www.w3.org/2000/svg" width="20"
+                                        height="25" viewBox="0 0 20 25">
+                                        <path id="Path_1" data-name="Path 1"
+                                            d="M7.356,15.959a31.58,31.58,0,0,1,5.4,0,18.664,18.664,0,0,1,2.917.429c2.076.418,3.43,1.243,4,2.453A3.751,3.751,0,0,1,19.635,22c-.579,1.21-1.934,2.035-4.042,2.464a18.7,18.7,0,0,1-2.906.418A24.352,24.352,0,0,1,9.836,25H9.5a.958.958,0,0,1,0-1.9h.748c.749-.009,1.5-.044,2.257-.11a17.792,17.792,0,0,0,2.644-.374c1.5-.33,2.436-.8,2.731-1.43a1.759,1.759,0,0,0,0-1.518c-.295-.638-1.234-1.133-2.7-1.43a17.012,17.012,0,0,0-2.688-.385,27.988,27.988,0,0,0-5.08,0,17.935,17.935,0,0,0-2.655.374c-1.5.33-2.425.8-2.731,1.43a1.825,1.825,0,0,0-.164.759,1.869,1.869,0,0,0,.164.77A3.175,3.175,0,0,0,4.209,22.47h0l.127.034a.956.956,0,0,1-.607,1.813,4.839,4.839,0,0,1-3.376-2.31,3.707,3.707,0,0,1,0-3.157c.579-1.243,1.934-2.046,4.02-2.475A20.044,20.044,0,0,1,7.356,15.959Zm.1-15.45a6.621,6.621,0,0,1,7.252,1.457,6.731,6.731,0,0,1,1.435,7.3A6.647,6.647,0,0,1,3.346,6.7h0l.006-.289A6.7,6.7,0,0,1,7.456.509Zm2.533,1.4a4.736,4.736,0,0,0-3.367,1.4,4.818,4.818,0,0,0,1.537,7.825A4.74,4.74,0,0,0,13.353,10.1,4.819,4.819,0,0,0,14.39,4.877,4.763,4.763,0,0,0,9.989,1.914Z"
+                                            fill="#274c77" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- toglle nav -->
+                        <div class="toggle_nav" id="toggle_nav">
+                            <ul>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+
+                        <!-- mobile nav -->
+                        <div class="mobile_nav" id="mobile_nav">
+                            <div class="mobile_nav_wrapper">
+                                <!-- cross btn -->
+                                <div class="cross_btn" id="cross_btn">
+                                    <span><svg xmlns="http://www.w3.org/2000/svg" width="20.012" height="20"
+                                            viewBox="0 0 20.012 20">
+                                            <path id="Path_30" data-name="Path 30"
+                                                d="M20.512,1.748a1.242,1.242,0,0,0-.366-.884,1.28,1.28,0,0,0-1.769,0L10.506,8.735,2.635.864a1.28,1.28,0,0,0-1.769,0,1.25,1.25,0,0,0,0,1.769L8.737,10.5.866,18.374a1.25,1.25,0,0,0,0,1.769,1.28,1.28,0,0,0,1.769,0l7.871-7.871,7.871,7.871a1.251,1.251,0,1,0,1.769-1.769L12.275,10.5l7.871-7.871A1.242,1.242,0,0,0,20.512,1.748Z"
+                                                transform="translate(-0.5 -0.509)" fill="#f9f8f8" />
+                                        </svg>
+                                    </span>
+                                </div>
+                                <!-- mobile nav -->
+                                <div class="mobile_nav_content">
+                                    <!-- mobile logo -->
+                                    <a href="" class="mobile_log">
+                                        <img src="assets/image/footerlogo.png" alt="">
+                                    </a>
+                                    <!-- nav list -->
+                                    <ul class="mobile_nav_list">
+                                        <li class="header_nav_item">
+                                            <a class="header_nav_link" href="#">Home</a>
+                                        </li>
+                                        <li class="header_nav_item">
+                                            <a class="header_nav_link" href="#">Insurance Request</a>
+                                        </li>
+                                        <li class="header_nav_item">
+                                            <a class="header_nav_link" href="#">Add Advertise</a>
+                                        </li>
+                                        <li class="header_nav_item">
+                                            <a class="header_nav_link" href="#">RCB</a>
+                                        </li>
+                                        <li class="header_nav_item">
+                                            <a class="header_nav_link" href="#">Directory</a>
+                                        </li>
+                                        <li class="header_nav_item">
+                                            <a class="header_nav_link" href="#">Articles <span
+                                                    class="header_nav_icon"><svg xmlns="http://www.w3.org/2000/svg"
+                                                        width="14" height="7.7" viewBox="0 0 14 7.7">
+                                                        <path id="Path_27" data-name="Path 27"
+                                                            d="M.256,13.795a.743.743,0,0,0,1.025,0L7.275,8.01a1.365,1.365,0,0,0,0-1.979L1.237.2A.744.744,0,0,0,.22.2a.683.683,0,0,0-.008,1L5.737,6.526a.682.682,0,0,1,0,.99L.256,12.806a.682.682,0,0,0,0,.989"
+                                                            transform="translate(13.999 0.001) rotate(90)"
+                                                            fill-rule="evenodd" />
+                                                    </svg>
+                                                </span></a>
+                                        </li>
+                                        <li class="header_nav_item">
+                                            <a class="header_nav_link" href="#">Support</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </header>
+        <!-- header section -->
+
+        <!-- add project form -->
+        <div class="add_project section_padding">
+            <div class="container">
+                <div class="add_form_wrapper">
+                    <!-- form -->
+                    <form action="" class="add_project_form">
+                        <div class="addproject_form_title">Add Listing</div>
+                        <!-- add project form wrapper -->
+                        <div class="addproject_form_wrappper">
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">Site Name</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">Site URL</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">Contact E-mail</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">Interest Percents</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">Minimal Spend</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">Minimal Withdraw</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">Referral Bonus</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">Withdrawal Type</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">Support E-mail</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">Support Form</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">Telegram Channel</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">Telegram Support</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">MMGP Forum</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">DTM Forum</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">Payment Methods</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <input type="text">
+                                </div>
+                            </div>
+
+                            <!-- inner -->
+                            <div class="addproject_form_inner addproject_form_inner_textarea">
+                                <!-- title -->
+                                <label for="" class="addproject_input_title">Description</label>
+                                <!-- input -->
+                                <div class="add_project_input">
+                                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- btn -->
+                            <div class="add_project_btn">
+                                <div class="card_btn">
+                                    <a href="">Submit</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+        <!-- add project form end -->
+
+        <!-- footer section -->
+        <div class="footer_section section_padding">
+            <div class="container">
+                <div class="footer_wrapper">
+                    <div class="row">
+                        <!-- footer details -->
+                        <div class="col-md-12 col-lg-6">
+                            <div class="footer_details">
+                                <!-- logo -->
+                                <div class="footer_logo_inner">
+                                    <a href="#" class="footer_logo">
+                                        <img src="assets/image/footerlogo.png" alt="">
+                                    </a>
+                                </div>
+                                <!-- footer details -->
+                                <div class="footer_details_text">
+                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                                        have
+                                        suffered
+                                        alteration in some form, by injected humour, or randomised words which don't
+                                        look
+                                        even slightly
+                                        believable.</p>
+                                </div>
+                                <!-- subscirbe -->
+
+                                <div class="subscribe_wrapper">
+                                    <!-- title -->
+                                    <div class="footer_title">Subscribe</div>
+                                    <!-- subscribe_inner -->
+                                    <div class="subscribe_inner">
+                                        <div class="subscribe_input">
+                                            <input type="text" placeholder="Enter your Email">
+                                        </div>
+                                        <div class="subscribe_btn">
+                                            <a href="#">Subscribe</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- footer nav -->
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer_nav">
+                                <!-- footer title -->
+                                <div class="footer_title">Quick Links</div>
+                                <!-- nav list -->
+                                <ul class="footer_nav_list">
+                                    <li><a href="">Home</a></li>
+                                    <li><a href="">News</a></li>
+                                    <li><a href="">Insurance request</a></li>
+                                    <li><a href="">RCB</a></li>
+                                    <li><a href="">Directory</a></li>
+                                    <li><a href="">Support</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-3">
+                            <div class="footer_social">
+                                <!-- footer title -->
+                                <div class="footer_title">Follow us</div>
+                                <!-- list -->
+                                <ul class="footer_social_list">
+                                    <!-- item -->
+                                    <li><a href="">
+                                            <span class="footer_social_list_icon"><i
+                                                    class="fa-brands fa-telegram"></i></span>
+                                            <span>Telegram Ru chat</span>
+                                        </a></li>
+                                    <!-- item -->
+                                    <li><a href="">
+                                            <span class="footer_social_list_icon"><i
+                                                    class="fa-brands fa-telegram"></i></span>
+                                            <span>Telegram Ru chat</span>
+                                        </a></li>
+                                    <!-- item -->
+                                    <li><a href="">
+                                            <span class="footer_social_list_icon"><i
+                                                    class="fa-brands fa-facebook-f"></i></span>
+                                            <span>Telegram Ru chat</span>
+                                        </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- footer section end -->
+
+
+
+        <!-- bootstrap cdn link -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- jquery cdn -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <!-- slick slider -->
+        <script src="assets/js/slick.min.js"></script>
+        <!-- app js -->
+        <script src="assets/js/apps.js"></script>
+
+    </body>
+
+    </html>

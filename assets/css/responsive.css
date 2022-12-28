@@ -34,6 +34,16 @@
     padding: 15px 45px;
   }
 
+  .insurance_rules_wrapper {
+    background-color: #F4F0BB;
+    padding: 60px;
+  }
+
+
+  .package_item {
+    padding: 60px 40px;
+  }
+
 }
 
 /* 1024 */
@@ -50,6 +60,10 @@
   .banner_heading {
     font-size: 70px;
     line-height: 106px;
+  }
+
+  .whyneed_banner_image {
+    margin: 0px 0px 0px auto;
   }
 }
 

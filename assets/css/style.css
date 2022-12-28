@@ -353,7 +353,379 @@
   font-weight: 700;
 }
 
+/* insurance rulse */
+
+.insurance_rules_wrapper {
+  background-color: #F4F0BB;
+  padding: 30px;
+}
+
+.insurance_rules_title {
+  margin-bottom: 48px;
+  text-align: center;
+  position: relative;
+}
+
+.insurance_rules_heading,
+.insurance_rules_content_title {
+  font-weight: 600;
+  font-size: 28px;
+  text-align: center;
+  color: var(--mainColor);
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--mainColor);
+  display: inline-block;
+  position: relative;
+}
+
+.insurance_rules_elips {
+  position: absolute;
+  height: 10px;
+  width: 20px;
+  background-color: #F4F0BB;
+  border-radius: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -4px
+}
+
+.insurance_rules_elips::after {
+  content: "";
+  height: 10px;
+  width: 10px;
+  background-color: var(--mainColor);
+  border-radius: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+}
+
+.insurance_rules_content_title {
+  text-align: left;
+  border: none;
+  padding-bottom: 0px;
+  margin-bottom: 30px;
+}
+
+.insurance_content_text {
+  max-width: 1087px;
+  width: 100%;
+  margin: 0px auto;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: left;
+  color: var(--primaryColor);
+}
+
+.insurance_rules_content_btn {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.insurance_rules_content:not(:last-child) {
+  margin-bottom: 60px;
+}
+
+.insurance_content_lsit {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+.insurance_content_lsit ul li a {
+  color: var(--mainColor);
+  display: block;
+  font-weight: 700;
+}
+
+/* add project */
+
+.row {
+  gap: 24px 0px;
+}
+
+.addproject_banner_image {
+  max-width: 1047px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.invest_project_item {
+  padding: 30px;
+  border-radius: 18px;
+}
+
+.invest_project_item_image {
+  width: 120px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+}
+
+.invest_project_item_content {
+  text-align: center;
+  color: var(--primaryColor);
+  font-weight: 600;
+  font-size: 28px;
+}
+
+.invest_project_item_content b {
+  margin-right: 10px;
+}
+
+.package_item {
+  border-radius: 18px;
+  background: linear-gradient(#595eec 0%, #234e91 100%);
+  box-shadow: 0px 10px 30px rgba(40, 40, 40, 0.3);
+  color: #FFFFFF;
+  padding: 30px 20px;
+}
+
+.package_ietm_head {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.package_item_price {
+  font-weight: bold;
+  font-size: 40px;
+  text-align: center;
+  color: #f3ffbd;
+  margin-bottom: 20px;
+}
+
+.package_item_title {
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 28px;
+  text-align: center;
+  color: #fff;
+
+}
+
+.package_item_subtitle {
+  font-size: 18px;
+  text-align: center;
+  color: #f3ffbd;
+
+}
+
+.package_item_content {
+  position: relative;
+}
+
+.package_item_list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.package_item_list ul li {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.package_item_list_icon {
+  display: flex;
+  font-size: 25px;
+  color: #F3FFBD;
+}
+
+.package_item_list_text {
+  font-weight: 500;
+  font-size: 18px;
+  text-align: left;
+  display: block;
+}
+
+.package_item_btn,
+.whychose_us_btn {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.whychose_us_btn a {
+  max-width: 700px;
+  width: 100%;
+  height: 70px;
+  background-color: var(--mainColor);
+  border-radius: 18px;
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 22px;
+  margin: 0px auto;
+  display: grid;
+  place-content: center;
+}
+
+.payment_walets_item {
+  padding: 25px;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+  margin: 0px 12px;
+}
+
+.payment_walets_item_img {
+  width: 70px;
+  margin: 0px auto;
+}
+
+.must_follow_rules_list ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+.must_follow_rules_list ul li {
+  font-weight: normal;
+  font-size: 18px;
+  text-align: left;
+  color: #7b838a;
+}
+
+/* add project form */
+
+.add_project {
+  background-color: rgb(40 40 40 / 60%);
+}
+
+.add_form_wrapper {
+  padding: 100px 30px;
+  background-color: #D9E3B2;
+  border-radius: 30px;
+  margin: 0px 15px;
+  overflow-x: auto;
+}
+
+.add_project_form {
+  min-width: 540px;
+  overflow-x: auto;
+}
+
+.add_project_form::-webkit-scrollbar {
+  width: 0px;
+}
+
+.addproject_form_title {
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  color: #282828;
+}
+
+.addproject_form_inner {
+  width: 100%;
+  border: 2px solid #274C77;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 80px;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+.addproject_form_inner:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.addproject_input_title {
+  width: 30%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-left: 20px;
+  background-color: var(--mainColor);
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  color: #fff;
+
+}
+
+.addproject_form_inner_textarea {
+  height: 200px;
+}
+
+.addproject_form_inner_textarea .addproject_input_title {
+  height: 200px;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+
+.addproject_form_inner_textarea .add_project_input {
+  height: 200px
+}
+
+.add_project_input {
+  width: 70%;
+  height: 80px
+}
+
+.add_project_input input,
+.add_project_input textarea {
+  height: 100%;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--textColor);
+}
+
+.add_project_btn {
+  text-align: right;
+}
+
+.whyneed_banner_wrapper {
+  padding: 45px;
+  border-radius: 18px;
+  background: linear-gradient(#ffb88e 0%, #ea5753 100%);
+  box-shadow: 0px 10px 20px rgba(40, 40, 40, 0.25);
+}
+
+
+.whyneed_banner_image {
+  max-width: 390px;
+  width: 100%;
+  margin: 0px auto 0px auto;
+}
+
+.hot_project_wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.hot_project_item {
+  padding: 14px 20px;
+  background: linear-gradient(#f40752 0%, #f9ab8f 100%);
+  border-radius: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.hot_project_item_image {
+  background-color: #FFFFFF;
+  width: 68px;
+  height: 50px;
+  border-radius: 12px;
+}
+
+.hot_project_item_text {
+  font-weight: 600;
+  font-size: 18px;
+  text-align: left;
+  color: #fff;
+
+}
+
 /* footer section */
+
 .footer_section {
   background-color: var(--mainColor);
 }
