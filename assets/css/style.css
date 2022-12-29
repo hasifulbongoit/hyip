@@ -724,6 +724,304 @@
 
 }
 
+/* reffer form */
+
+.reffer_cashform_item {
+  position: relative;
+}
+
+.reffer_cashform_item label {
+  font-weight: normal;
+  font-size: 24px;
+  text-align: left;
+  color: #274c77;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.reffer_cashform_item input {
+  height: 70px;
+  width: 100%;
+  padding: 15px;
+  color: #fff;
+  border-radius: 8px;
+  background: #274c77;
+  outline: none;
+  border: none;
+}
+
+.form_condition_title {
+  font-weight: 600;
+  font-size: 24px;
+  text-align: left;
+  color: #274c77;
+  margin-bottom: 20px;
+}
+
+.from_condition_checkwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.from_condition_checkwrapper input {
+  height: 25px;
+  width: 25px;
+  display: block;
+}
+
+.from_condition_checkwrapper p {
+  font-weight: normal;
+  font-size: 18px;
+  text-align: left;
+  color: #274c77;
+}
+
+.rcb_textblock_content {
+  background: linear-gradient(#ffb88e 0%, #ea5753 100%);
+}
+
+/* rcb table */
+
+.rcb_table_wrapper {
+  border-spacing: 0;
+  width: 100%;
+  color: #fff;
+  overflow-x: auto;
+  border-radius: 16px;
+}
+
+.rcb_table_wrapper table {
+  min-width: 768px;
+  overflow-x: auto;
+  width: 100%;
+  border-collapse: collapse;
+  border-style: none;
+}
+
+.rcb_table_wrapper table thead tr {
+  background-color: #FFFFFF;
+}
+
+.rcb_table_wrapper table tbody tr {
+  background-color: var(--mainColor);
+}
+
+.rcb_table_wrapper table tr th,
+.rcb_table_wrapper table tr td {
+  padding: 28px 35px;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.request_rcb_content {
+  background: #d9e3b2;
+
+}
+
+.rcb_table_wrapper table tr th {
+  color: var(--mainColor);
+}
+
+.rcb_request_text_content {
+  color: #7b838a;
+
+}
+
+.rcb_request_text {
+  color: var(--mainColor);
+}
+
+.rcb_request_text b {
+  color: var(--mainColor);
+}
+
+.rcbcashback_flowers_content {
+  background-color: var(--mainColor);
+}
+
+.rcb_cashback_flowers_text {
+  font-size: 18px;
+  word-break: break-all;
+}
+
+.rcb_refferal_deposit_content {
+  background-color: #F3FFBD;
+}
+
+.rcb_refferal_acount_table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.rcb_refferal_acount_table table {
+  min-width: 768px;
+  overflow-x: auto;
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+}
+
+.rcb_refferal_acount_table table thead tr {
+  background-color: #FFFFFF;
+}
+
+.rcb_refferal_acount_table table tbody tr {
+  background-color: #FFFFFF;
+}
+
+.rcb_refferal_acount_table table tr th,
+.rcb_refferal_acount_table table tr td {
+  padding: 28px 10px;
+  font-size: 18px;
+  font-weight: 700;
+  border: 2px solid var(--mainColor);
+  color: var(--mainColor);
+  min-width: 100px;
+  text-align: center;
+}
+
+.rcb_refferal_acount_table_image {
+  width: 34px;
+  margin: 0px auto;
+}
+
+.link_directory_btnWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  flex-flow: wrap;
+}
+
+.link_directory_btn {
+  position: relative;
+}
+
+.link_directory_btn a {
+  height: 56px;
+  width: 200px;
+  border-radius: 12px;
+  background: #5e548e;
+  display: grid;
+  place-content: center;
+  color: #FFFFFF;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.link_directory_btn:nth-child(2) a {
+  background-color: #219EBC;
+}
+
+.link_directory_btn:nth-child(3) a {
+  background-color: #023047;
+}
+
+.link_directory_btn:nth-child(4) a {
+  background-color: #FFB703;
+}
+
+.link_directory_btn:nth-child(5) a {
+  background-color: #FFB703;
+}
+
+.link_directory_btn:nth-child(6) a {
+  background-color: #606C38;
+}
+
+
+.link_directory_add_wrapper a {
+  padding: 30px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #5E548E;
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.link_directory_add_left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+
+.linkdir_add_icon {
+  height: 32px;
+  width: 32px;
+  border-radius: 4px;
+  display: grid;
+  place-content: center;
+  font-size: 20px;
+  background-color: #FFFFFF;
+  color: #000;
+}
+
+.linkdir_add_text {
+  display: flex;
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.link_directory_add_right span {
+  color: #FFFFFF;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* airtle news */
+
+.latestairtle_news_wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.latestairtle_news_item {
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.latestairtle_news_item_wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.latestairtle_news_item_image {
+  background: url(../image/Home\ Page.jpg);
+  width: 40%;
+}
+
+.latestairtle_news_item_content {
+  padding: 30px;
+  background-color: #9F86C0;
+  width: calc(100% - 40%);
+}
+
+.latest_news_item_title {}
+
+.latest_news_item_date {}
+
+.latest_news_item_text {}
+
+.latestairtle_news_item_footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.latestairtle_news_item_view {}
+
+.latestairtle_news_item_view span {}
+
+.latestairtle_news_item_btn {}
+
+
 /* footer section */
 
 .footer_section {
